@@ -1,0 +1,33 @@
+#map {
+  height: 81vh;
+  width: 100%;
+}
+
+#route {
+  background-color: #FAAE27;
+}
+
+.routeIcons {
+  color: #fff;
+  padding-top: 1rem;
+}
+
+#start, #finish {
+  border-bottom: 1px solid #fff;
+}
+
+.input-field label {
+  color: #fff;
+}
+
+.input-field input {
+  color: #fff;
+}
+
+.input-field input[type=text]:focus + label {
+  color: #fff;
+}
+
+#findBtn, #traceBtn {
+  padding-top: 1.8rem;
+}

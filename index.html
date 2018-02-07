@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>Encuéntrame</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">  
+  </head>
+  <body>
+    <header id="route">
+      <div class="row center-align">
+        <form class="col s12">
+          <div class="row">
+            <div class="input-field col s4">
+              <i class="material-icons prefix routeIcons">home</i>
+              <input id="start" type="text" placeholder="">
+              <label for="start">Partida</label>
+            </div>
+            <div class="input-field col s4">
+              <i class="material-icons prefix routeIcons">place</i>
+              <input id="finish" type="text" placeholder="">
+              <label for="finish">Llegada</label>
+            </div>
+            <div id="traceBtn" class="col s2 center-align">
+              <a id="traceRoute" class="waves-effect waves-light btn">Trazar Ruta</a>
+            </div>
+            <div id="findBtn" class="col s2 center-align">
+              <a id="findMe" class="waves-effect waves-light btn">Búscame</a>
+            </div>
+          </div>
+        </form>
+      </div>
+    </header>
+    <section>
+      <div class="row">
+        <div class="col s12">
+          <div id="map"></div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Scripts -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.9.1/firebase.js"></script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDCtba6bh9mprLe-FUZTQYR8yLgcR0Tqug&callback=initMap&libraries=places">
+    </script>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>
